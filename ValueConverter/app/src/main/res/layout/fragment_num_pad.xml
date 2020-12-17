@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:columnCount="3">
+    <Button android:text="AC" android:layout_columnWeight="1" android:layout_rowWeight="1" android:id="@+id/erallbutton1"> </Button>
+    <Button android:text="C" android:layout_columnWeight="1" android:layout_rowWeight="1" android:id="@+id/erbutton"> </Button>
+    <Button android:text="=" android:layout_columnWeight="1" android:layout_rowWeight="1" android:id="@+id/equal"> </Button>
+    <Button android:text="7" android:layout_columnWeight="1" android:layout_rowWeight="1" android:id="@+id/button7"> </Button>
+    <Button android:text="8" android:layout_columnWeight="1" android:layout_rowWeight="1" android:id="@+id/button8"> </Button>
+    <Button android:text="9" android:layout_rowWeight="1" android:layout_columnWeight="1" android:id="@+id/button9"> </Button>
+    <Button android:text="4" android:layout_rowWeight="1" android:layout_columnWeight="1" android:id="@+id/button4"> </Button>
+    <Button android:text="5" android:layout_rowWeight="1" android:layout_columnWeight="1" android:id="@+id/button5"> </Button>
+    <Button android:text="6" android:layout_rowWeight="1" android:layout_columnWeight="1" android:id="@+id/button6"> </Button>
+    <Button android:text="1" android:layout_rowWeight="1" android:layout_columnWeight="1" android:id="@+id/button1"> </Button>
+    <Button android:text="2" android:layout_rowWeight="1" android:layout_columnWeight="1" android:id="@+id/button2"> </Button>
+    <Button android:text="3" android:layout_rowWeight="1" android:layout_columnWeight="1" android:id="@+id/button3"> </Button>
+    <Button android:text="+/-" android:layout_rowWeight="1" android:layout_columnWeight="1" android:id="@+id/plusminus"> </Button>
+    <Button android:text="0" android:layout_rowWeight="1" android:layout_columnWeight="1" android:id="@+id/button0"> </Button>
+    <Button android:text="." android:layout_rowWeight="1" android:layout_columnWeight="1" android:id="@+id/point"> </Button>
+</GridLayout>

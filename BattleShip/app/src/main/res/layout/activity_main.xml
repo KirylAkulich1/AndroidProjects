@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/enemy_field"
+            android:layout_marginBottom="10dp"/>
+        <FrameLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/my_field"/>
+<!--
+        <GridView
+            android:id="@+id/enemy"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:columnWidth="50dp"
+            android:gravity="center"
+            android:numColumns="10"
+            android:rowCount="10"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp">
+
+        </GridView>
+
+        <GridView
+            android:id="@+id/self"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:columnWidth="50dp"
+            android:gravity="center"
+            android:numColumns="10"
+            android:stretchMode="columnWidth">
+
+        </GridView>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onLoginClicked"/>
+    </LinearLayout>
+
+</LinearLayout>

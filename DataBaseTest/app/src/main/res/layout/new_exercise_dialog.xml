@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exercise name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exercise_name_edit"
+        />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="false"
+        android:layout_gravity="center"
+        android:id="@+id/color_value"
+        android:background="@color/black"
+        android:orientation="vertical"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:max="255"
+        android:id="@+id/red_value"
+        android:background="#DD0C0C"
+        android:layout_marginTop="10dp"
+        />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:max="255"
+        android:id="@+id/blue_value"
+        android:layout_marginTop="10dp"
+        android:background="#0C59DD"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:max="255"
+        android:id="@+id/green_value"
+        android:background="#44DD0C"
+        android:layout_marginTop="10dp"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:text="Save"
+            android:id="@+id/save_exercise_with_color"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</LinearLayout>

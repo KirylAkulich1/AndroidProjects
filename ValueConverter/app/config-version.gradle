@@ -1,0 +1,66 @@
+
+
+def getMajor={->
+
+        def stdout=new ByteArrayOutputStream()
+        exec{
+            commandLine 'git','describe'
+            standardOutput=stdout
+        }
+        def tag=stdout.toString().trim()
+        return tag.substring(0,tag.indexOf(".")).toInteger()
+}
+def getPatch={->
+    def stdout=new ByteArrayOutputStream()
+    exec{
+        commandLine 'git','describe'
+        standardOutput=stdout
+    }
+    def res = stdout.toString()
+    if (res.contains('-')) {
+        return res.split('-')[1].toInteger()
+    } else {
+        return 0
+    }
+}
+def getMinor={->
+    try{
+        def stdout=new ByteArrayOutputStream()
+        exec{
+            commandLine 'git','describe'
+            standardOutput=stdout
+        }
+        def tag=output.toString().trim()
+        tag=tag.substring(tag.indexOf("-"))
+        return tag.substring(tag.indexOf(".")+1).toInteger()
+    }
+    catch(ignored) {
+        return -1
+    }
+}
+
+def getVersionCode={->
+    def major=getMajor()
+    def minor=getMinor()
+    def patch=getPatch()
+    def code=major*1000000+minor*10000+patch
+    return code
+
+}
+
+def getVersionName={->
+    def major=getMajor()
+    def minor=getMinor()
+    def patch=getPatch()
+    def name=major.toString()+"."+minor.toString()+"."+patch.toString()
+    return name
+}
+
+
+android {
+    defaultConfig {
+        versionCode getVersionCode()
+        versionName getVersionName()
+    }
+}
+//android { defaultConfig { versionCode getVersionCode(); versionName getVersionName() } }

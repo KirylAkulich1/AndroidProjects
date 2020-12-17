@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DataBaseTest</string>
+    <string name="begin_btn">Старт</string>
+
+    <string name="run">Бег</string>
+    <string name= "lang">Рус\Англ</string>
+    <string-array name="activity_type">
+    <item >Перерыв</item>
+    <item name="workout">Тренировка</item>
+    <item name="cooldown">Отдых</item>
+    <item name="warm_up">Разминка</item>
+    </string-array>
+    <string name="change_theme">Изменить тему</string>
+    <string name="change_lan">Изменить язык</string>
+    <string name="change_font">Изменить шрифт</string>
+    <string name="rest">Отдых</string>
+    <string name="duration">Продолжительность</string>
+    <string name="repetition">Повторения</string>
+    <string name="clean_all">Очистить</string>
+</resources>

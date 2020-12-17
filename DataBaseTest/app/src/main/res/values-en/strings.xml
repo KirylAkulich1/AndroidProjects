@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DataBaseTest</string>
+    <string name="begin_btn">Start</string>
+
+    <string name="run">Run</string>
+    <string name= "lang">RU\ENG</string>
+    <string-array name="activity_type">
+    <item >Rest</item>
+    <item >workout</item>
+    <item >cooldown</item>
+    <item>Warm-up</item>
+    </string-array>
+    <string name="change_theme">Change theme</string>
+    <string name="change_lan">Change language</string>
+    <string name="change_font">Change font</string>
+    <string name="rest">Rest</string>
+    <string name="duration">Duration</string>
+    <string name="repetition">Repetitions</string>
+    <string name="clean_all">Clean all</string>
+</resources>

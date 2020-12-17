@@ -1,0 +1,19 @@
+   when (p0.getIntExtra("action",0)){
+                1->{
+                    val rep=p0.getIntExtra("rep",0)
+                    val duration=p0.getIntExtra("duration",0)
+                    mTimer=object :CountDownTimer((5*1000).toLong(),(1000).toLong()){
+                        override fun onFinish() {
+                           // val notification: Uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
+                          //  val r=RingtoneManager.getRingtone(applicationContext, notification)
+                            layoutChanger.onNext()
+                           // r.play()
+                        }
+                        override fun onTick(p0: Long) {
+                            layoutChanger.onTick()
+                            Log.e("tag","CurrentActivity"+p0.toString())
+                        }
+
+                    }.start()
+                }
+            }
